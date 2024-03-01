@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script language="javascript">
+          function change()
+          {
+             // Lấy đối tượng
+             var object = document.getElementById("object");
+          
+             // lấy thuộc tính type
+             var type = object.type;
+         
+             // kiểm tra thuộc tính type và thay đổi
+            if (type == "button"){
+           
+               object.type = 'text';
+            }
+            else{
+                object.type = "button";
+            }
+         
+          }
+        </script>
+        <input type="button" value="CLick me" onclick="change()" id="object" />
+    </body>
+</html>

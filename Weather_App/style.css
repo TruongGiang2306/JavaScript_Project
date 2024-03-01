@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+    --primary-color: linear-gradient(135deg, #00feba, #5b548a);
+    --second-color: #ebfffc;
+}
+
+.dark_mode {
+    --primary-color: linear-gradient(135deg, #23080f, #5b548a);
+    --second-color: black;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+.card {
+    margin: auto;
+    width: 50%;
+    max-width: 450px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: var(--second-color);
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search .btn1 {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--second-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather {
+    display: none;
+}
+
+.weather-icon {
+    width: 150px;
+    height: 150px;
+    margin: 15px 0;
+}
+
+.weather .temp {
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.weather .city {
+    margin-bottom: 100px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+}
+
+.col .humidity, .wind {
+    font-size: 30px;
+}
+
+.col img {
+    margin-top: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+.col div {
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
+
+#dark_icon {
+    width: 23px;
+}
+
+.card .btn2 {
+    margin-left: 15px;
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--second-color);
+    border-radius: 50%;
+    cursor: pointer; 
+}
